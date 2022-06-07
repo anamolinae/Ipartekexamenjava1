@@ -10,10 +10,10 @@ public class Coche {
 	private String color;
 	private Integer potencia; // en cv
 	private Integer cilindros;
-	
-	
-	//constructor
-	public Coche(Long id, String matricula, String marca, String modelo, String color, Integer potencia, Integer cilindros) {
+
+	// constructor
+	public Coche(Long id, String matricula, String marca, String modelo, String color, Integer potencia,
+			Integer cilindros) {
 		setId(id);
 		setMatricula(matricula);
 		setMarca(marca);
@@ -23,10 +23,9 @@ public class Coche {
 		setCilindros(potencia);
 	}
 
-		public Coche() {
-		}
-		
-		
+	public Coche() {
+	}
+
 	// getters setters
 	public Long getId() {
 		return id;
@@ -112,7 +111,5 @@ public class Coche {
 		return "Coche [id=" + id + ", matricula=" + matricula + ", marca=" + marca + ", modelo=" + modelo + ", color="
 				+ color + ", potencia=" + potencia + ", cilindros=" + cilindros + "]";
 	}
-
-
 
 }

@@ -21,7 +21,7 @@ public class PresentacionConsola {
 
 	private static void mostrarMenu() {
 		pl("1. Mostrar todos");
-		pl("2. Insertar nuevo coche");
+		pl("2. Añadir");
 		pl("0. Salir");
 	}
 
