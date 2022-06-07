@@ -20,10 +20,9 @@ public class PresentacionConsola {
 	}
 
 	private static void mostrarMenu() {
-		pl("1. Insertar coche");
-		pl("2. Mostar todos");
-		pl("3. salir");
-//		pl("4. Salir");
+		pl("1. Mostrar todos");
+		pl("2. Insertar nuevo coche");
+		pl("0. Salir");
 	}
 
 	private static int pedirOpcion() {
@@ -31,18 +30,19 @@ public class PresentacionConsola {
 	}
 
 	private static void procesarOpcion(int opcion) {
-		if( opcion == 1) {
-			insertar();
-			}
-		else if (opcion == 2) {
+		switch (opcion) {
+		case 1:
 			mostrarTodos();
+			break;
+		case 2:
+			insertar();
+			break;
+		case 0:
+			pl("Gracias por utilizar la aplicación");
+			break;
+		default:
+			errorPl("Por favor, elija una de las opciones existentes");
 		}
-		else (opcion == 3){
-			pl("Gracias por usar la aplicacion");
-			
-			
-		}
-	
 	}
 
 	private static void mostrarTodos() {
